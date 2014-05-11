@@ -8,14 +8,14 @@ There are many resources for learning haskell on the web, but few of them focus 
 
 * [Tour of Haskell Syntax](http://www.cs.utep.edu/cheon/cs3360/pages/haskell-syntax.html)
 * [10 things you should know about haskell syntax](https://www.fpcomplete.com/blog/2012/09/ten-things-you-should-know-about-haskell-syntax)
-* http://prajitr.github.io/quick-haskell-syntax/
+* [A Quick Tour of Haskell Syntax](http://prajitr.github.io/quick-haskell-syntax/)
 * [The Haskell Cheatsheet](http://cheatsheet.codeslower.com/)
 * [Haskell Reference Card](http://www.haskell.org/haskellwiki/Reference_card)
 
 ## Tutorials
 
 * [wreq: a Haskell web client library HTTP made easy for Haskell.](http://www.serpentine.com/wreq/)
-* [Using the Foursquare API to get a list of trending venues](https://www.fpcomplete.com/school/to-infinity-and-beyond/pick-of-the-week/foursquare-api-example)
+* http://www.haskell.org/haskellwiki/Category:Tutorials
 * http://www.haskell.org/haskellwiki/Tutorials
 * https://www.fpcomplete.com/school
 * http://lisperati.com/haskell/
