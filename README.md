@@ -12,7 +12,7 @@ There are many resources for learning haskell on the web, but few of them focus 
 * [The Haskell Cheatsheet](http://cheatsheet.codeslower.com/)
 * [Haskell Reference Card](http://www.haskell.org/haskellwiki/Reference_card)
 
-## Tutorals
+## Tutorials
 
 * [wreq: a Haskell web client library HTTP made easy for Haskell.](http://www.serpentine.com/wreq/)
 * [Using the Foursquare API to get a list of trending venues](https://www.fpcomplete.com/school/to-infinity-and-beyond/pick-of-the-week/foursquare-api-example)
