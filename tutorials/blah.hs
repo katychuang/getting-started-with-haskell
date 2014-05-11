@@ -57,14 +57,17 @@ getRHLines json =
 
 -- REFERENCE & LINKS --
 
--- This file comes from a tutorial published in Nov 2012. Some types have 
+-- This file comes from a tutorial published in Nov 2012. Some types have
 -- been changed to make it work with the latest version of Aeson 0.7.0.3
--- The original version is published at: 
+-- The original version is published at:
 -- http://blog.raynes.me/blog/2012/11/27/easy-json-parsing-in-haskell-with-aeson/
 
 
+-- The main change from original version published in 2012 was the input
+-- type change. The current aeson version 0.7.0.3 takes Scientific instead of
+-- Integer type. You can find types by typing :t Number into your ghci console.
 -- Reference for aeson 0.7.0.3 types http://hackage.haskell.org/package/aeson-0.7.0.3/docs/Data-Aeson-Types.html
--- 
+--
 
 -- Usage
 -- inside ghci, load the file with :load blah.hs
