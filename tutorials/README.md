@@ -4,11 +4,9 @@
 |             Description              |   File  |           URL            |
 | ------------------------------------ | ------- | ------------------------ |
 | Using Aeson Library                  | blah.hs | [Tutorial][1]            |
-| Aeson + Foursquare API               | -       | [Tutorial][2], [Code][3] |
+| Aeson Library + Foursquare API       | -       | [Tutorial][2], [Code][3] |
 | Hakyll set up                        | -       | [Tutorial][4]            |
 | Snap framework with PostgreSQL setup | -       | [Tutorial][5]            |
-|                                      |         |                          |
-|                                      |         |                          |
 
 
 [1]: http://blog.raynes.me/blog/2012/11/27/easy-json-parsing-in-haskell-with-aeson/
