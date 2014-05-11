@@ -1,14 +1,14 @@
 
 # Project Index
 
-|       File      |           URL            |
-| --------------- | ------------------------ |
-| blah.hs         | [Tutorial][1]            |
-| foursquare.hs   | [Tutorial][2], [Code][3] |
-| hakyll set up   | [Tutorial][4]            |
-| *snap, postgres | [Tutorial][5]            |
-|                 |                          |
-|                 |                          |
+|     Description     |   File  |           URL            |
+| ------------------- | ------- | ------------------------ |
+| Using Aeson Library | blah.hs | [Tutorial][1]            |
+| foursquare with api | -       | [Tutorial][2], [Code][3] |
+| *hakyll set up*     | -       | [Tutorial][4]            |
+| *snap, postgres*    | -       | [Tutorial][5]            |
+|                     |         |                          |
+|                     |         |                          |
 
 
 [1]: http://blog.raynes.me/blog/2012/11/27/easy-json-parsing-in-haskell-with-aeson/
