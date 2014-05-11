@@ -7,23 +7,27 @@ There are many resources for learning haskell on the web, but few of them focus 
 ## Haskell Syntax
 
 * [Tour of Haskell Syntax](http://www.cs.utep.edu/cheon/cs3360/pages/haskell-syntax.html)
-* https://www.fpcomplete.com/blog/2012/09/ten-things-you-should-know-about-haskell-syntax
+* [10 things you should know about haskell syntax](https://www.fpcomplete.com/blog/2012/09/ten-things-you-should-know-about-haskell-syntax)
 * http://prajitr.github.io/quick-haskell-syntax/
 * [The Haskell Cheatsheet](http://cheatsheet.codeslower.com/)
-* http://www.haskell.org/haskellwiki/Reference_card
+* [Haskell Reference Card](http://www.haskell.org/haskellwiki/Reference_card)
 
 ## Tutorals
 
+* [wreq: a Haskell web client library HTTP made easy for Haskell.](http://www.serpentine.com/wreq/)
+* [Using the Foursquare API to get a list of trending venues](https://www.fpcomplete.com/school/to-infinity-and-beyond/pick-of-the-week/foursquare-api-example)
 * http://www.haskell.org/haskellwiki/Tutorials
 * https://www.fpcomplete.com/school
 * http://lisperati.com/haskell/
 * http://www.umiacs.umd.edu/~hal/docs/daume02yaht.pdf
 
+**Note:** there is a more detailed list in the [*tutorials* directory](https://github.com/katychuang/getting-started-with-haskell/tree/master/examples)
+
 ## Tips
 
 * [What I Wish I Knew When Learning Haskell 2.0](http://dev.stephendiehl.com/hask/)
 * [N00b FAQ](http://echo.rsmw.net/n00bfaq.html)
-* http://www.haskell.org/haskellwiki/Haskell_programming_tips
+* [Haskell Programming Tips](http://www.haskell.org/haskellwiki/Haskell_programming_tips)
 * https://twitter.com/HaskellTips
 
 ## Where to find haskellers
@@ -36,4 +40,5 @@ There are many resources for learning haskell on the web, but few of them focus 
 # Misc, but useful
 
 * [Scalable Program Architectures](https://news.ycombinator.com/item?id=7586812)
+* [iHaskell](http://gibiansky.github.io/IHaskell/)
 
