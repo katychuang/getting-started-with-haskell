@@ -5,7 +5,7 @@
 | ------------------------------------ | --------------------- | ------------------------ |
 | Using Aeson Library                  | blah.hs               | [Tutorial][1]            |
 | Parsing Twitter API                  | twitter-fpcomplete.hs | [Tutorial][2]            |
-| Aeson Library + Foursquare API       | -                     | [Tutorial][3], [Code][4] |
+| Aeson Library + Foursquare API       | foursquaretrends.hs   | [Tutorial][3], [Code][4] |
 | Hakyll set up                        | -                     | [Tutorial][5]            |
 | Snap framework with PostgreSQL setup | -                     | [Tutorial][6]            |
 
