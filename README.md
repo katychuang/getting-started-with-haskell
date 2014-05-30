@@ -21,7 +21,7 @@ There are many resources for learning haskell on the web, but few of them focus 
 * http://lisperati.com/haskell/
 * http://www.umiacs.umd.edu/~hal/docs/daume02yaht.pdf
 
-**Note:** there is a more detailed list in the [*tutorials* directory](https://github.com/katychuang/getting-started-with-haskell/tree/master/examples)
+**Note:** there is a more detailed list in the [*tutorials* directory](https://github.com/katychuang/getting-started-with-haskell/tree/master/tutorials)
 
 ## Tips
 
