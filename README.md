@@ -23,10 +23,14 @@ There are many resources for learning haskell on the web, but few of them focus 
 
 **Note:** there is a more detailed list in the [*tutorials* directory](https://github.com/katychuang/getting-started-with-haskell/tree/master/tutorials)
 
+## Complete Learning Resources 
+
+* [How to Learn Haskell](https://github.com/bitemyapp/learnhaskell)
+
+ 
 ## Tips
 
 * [What I Wish I Knew When Learning Haskell 2.0](http://dev.stephendiehl.com/hask/)
-* [How to Learn Haskell](https://github.com/bitemyapp/learnhaskell)
 * [N00b FAQ](http://echo.rsmw.net/n00bfaq.html)
 * [Haskell Programming Tips](http://www.haskell.org/haskellwiki/Haskell_programming_tips)
 * https://twitter.com/HaskellTips
