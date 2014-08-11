@@ -12,7 +12,9 @@ shrink (x, y) = (x / 2, y / 2)
 shrink' :: [Double] -> [Double]
 shrink' theList = map (/2) theList
 
+-- Reduce input by percentage indicated
+redux :: ([Double], Double) -> [Double]
+redux (theList, y) = map (*y) theList
 
-
-
-
+redux' :: Double -> (Double, Double) -> (Double, Double)
+redux' factor (x, y) = (x * factor, y * factor)
