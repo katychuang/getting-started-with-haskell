@@ -30,7 +30,7 @@ There are many resources for learning haskell on the web, but few of them focus 
 ## Complete Learning Resources 
 
 * [How to Learn Haskell](https://github.com/bitemyapp/learnhaskell)
-
+* [Recommended Reading Material](http://reinh.com/notes/posts/2014-07-25-recommended-reading-material.html)
  
 ## Tips
 
