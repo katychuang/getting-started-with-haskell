@@ -1,3 +1,7 @@
+-- Author: @katychuang
+-- These are functions I wrote to practice thinking in Haskell to help with
+-- photo processing work. See instructions below on how to use ghci
+
 ------------------------------------------------------------------------
 -- Files begin with some settings to make sure ghc runs smoothly.
 
@@ -33,6 +37,15 @@ redux (theList, percentShrink) = map (*percentShrink) theList
 -- Reduce a pair of width/height pair in a tuple, by a given factor, i.e. 0.5
 redux' :: Double -> (Double, Double) -> (Double, Double)
 redux' factor (x, y) = (x * factor, y * factor)
+
+------------------------------------------------------------------------
+-- Return calculations at 0.75, 0.5, 0.25 increments
+
+
+-- Return calculations at 0.10 increments, i.e. 0.9, 0.8, 0.7, etc
+
+
+-- Return calculations at 0.10 increments, i.e. 0.9, 0.8, 0.7, etc
 
 
 ------------------------------------------------------------------------
