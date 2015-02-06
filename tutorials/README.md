@@ -19,4 +19,11 @@
 [5]: http://yannesposito.com/Scratch/en/blog/Hakyll-setup/
 [6]: http://janrain.com/blog/tutorial-building-a-sample-application-with-haskell-snap-postgresql-and-the-postgresql-simple-snaplet/
 
+---
+
+**Topic: Numeric**
+
+|             Description               |          File         |           URLs           |
+| ------------------------------------- | --------------------- | ------------------------ |
+| Image Ratio calculation               | img-ratio.hs          |                          |
 
