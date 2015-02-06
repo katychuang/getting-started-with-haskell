@@ -1,11 +1,17 @@
+------------------------------------------------------------------------
+-- Files begin with some settings to make sure ghc runs smoothly.
+
 {-# LANGUAGE OverloadedStrings #-}
 {-# OPTIONS_GHC -fno-warn-incomplete-patterns #-}
+------------------------------------------------------------------------
+-- Modules start with imports.
 
--- Modules start with imports
-
+-- We don't need to import anything for this file.
 
 ------------------------------------------------------------------------
--- Simple exercise: reduce input number in half
+-- Simple exercises
+
+-- reduce input number in half
 shrinkWidth :: Double -> Double
 shrinkWidth x = x / 2
 
@@ -20,10 +26,11 @@ shrink (x, y) = (x / 2, y / 2)
 shrink' :: [Double] -> [Double]
 shrink' theList = map (/2) theList
 
--- Reduce input by percentage indicated
+-- Reduce a list of numbers by percentage (i.e. 0.5 for half size) indicated as the 2nd item in a tuple
 redux :: ([Double], Double) -> [Double]
-redux (theList, y) = map (*y) theList
+redux (theList, percentShrink) = map (*percentShrink) theList
 
+-- Reduce a pair of width/height pair in a tuple, by a given factor, i.e. 0.5
 redux' :: Double -> (Double, Double) -> (Double, Double)
 redux' factor (x, y) = (x * factor, y * factor)
 
