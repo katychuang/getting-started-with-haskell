@@ -21,7 +21,7 @@
 
 ---
 
-**Topic: Numeric**
+**Topic: Numeric Functions & Data types**
 
 |             Description               |          File         |           URLs           |
 | ------------------------------------- | --------------------- | ------------------------ |
