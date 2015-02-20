@@ -40,12 +40,18 @@ redux' factor (x, y) = (x * factor, y * factor)
 
 ------------------------------------------------------------------------
 -- Return calculations at 0.75, 0.5, 0.25 increments
-
-
--- Return calculations at 0.10 increments, i.e. 0.9, 0.8, 0.7, etc
-
+quarters :: (Double, Double) -> [(Double, Double)]
+quarters (x, y) = [(x * 0.75, y * 0.75), (x * 0.5, y * 0.5), (x * 0.25, y * 0.25)]
 
 -- Return calculations at 0.10 increments, i.e. 0.9, 0.8, 0.7, etc
+tenths :: (Double, Double) -> [(Double, Double)]
+tenths (x, y) = [(x * 0.9, y * 0.9), (x * 0.8, y * 0.8), (x * 0.7, y * 0.7), 
+		    (x * 0.6, y * 0.6), (x * 0.5, y * 0.5), (x * 0.4, y * 0.4),
+		    (x * 0.3, y * 0.3), (x * 0.2, y * 0.2), (x * 0.1, y * 0.1)]
+
+-- Return calculations at 0.10 increments, i.e. 0.9, 0.8, 0.7, etc (with recursion)
+tenths' :: (Double, Double) -> [(Double, Double)]
+tenths' (x, y) = reverse $ [(x * factor / 10, y * factor / 10) | factor <- [1..9]]
 
 
 ------------------------------------------------------------------------
