@@ -27,3 +27,14 @@
 | ------------------------------------- | --------------------- | ------------------------ |
 | Image Ratio calculation               | img-ratio.hs          |                          |
 
+---
+
+**Topic: Environments**
+
+|             Description               |          File         |           URLs           |
+| ------------------------------------- | --------------------- | ------------------------ |
+| iHaskell with [Blaze][301] html       | blaze-ihaskell.ipynb  | [Demo][301]              |
+
+[301]: http://nbviewer.ipython.org/github/katychuang/getting-started-with-haskell/blob/master/tutorials/blaze-ihaskell.ipynb
+
+
