@@ -29,6 +29,14 @@
 
 ---
 
+**Topic: Graphis** 
+
+|             Description               |          File         |           URLs           |
+| ------------------------------------- | --------------------- | ------------------------ |
+| Textbox with border                   | diagram-textbox.hs    |                          |
+
+---
+
 **Topic: Environments**
 
 |             Description               |          File         |           URLs           |
