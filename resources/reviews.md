@@ -6,4 +6,4 @@ At this time I am too green with Haskell to personally provide specific recommen
 ## Reviews
 
 * [How to Learn Haskell](https://github.com/bitemyapp/learnhaskell)
-* [Bitemyapp's book reviews](http://bitemyapp.com/posts/2014-12-31-functional-education.html)
+* [Bitemyapp's view on books & courses](http://bitemyapp.com/posts/2014-12-31-functional-education.html)
