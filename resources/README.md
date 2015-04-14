@@ -28,6 +28,7 @@ This is an unsorted and unrated list of resources; peruse these resources at you
 
 ## Books & Book Clubs
 
+* [Anatomy of Programming Languages](http://www.cs.utexas.edu/~wcook/anatomy/) 
 * [Big list of books](http://reinh.com/notes/posts/2014-07-25-recommended-reading-material.html)
 * [Haskell Data Analysis Cookbook](http://haskelldata.com)
 * [Real World Haskell](http://book.realworldhaskell.org)
