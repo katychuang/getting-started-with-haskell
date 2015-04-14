@@ -39,6 +39,7 @@ This is an unsorted and unrated list of resources; peruse these resources at you
 * [N00b FAQ](http://echo.rsmw.net/n00bfaq.html)
 * [Haskell Programming Tips](http://www.haskell.org/haskellwiki/Haskell_programming_tips)
 * [Twitter-Haskell Tips](https://twitter.com/HaskellTips)
+* [Simple Cabal Guide](http://katychuang.com/cabal-guide)
 
 ## Misc
 
