@@ -1,4 +1,6 @@
-Here is a list of detailed reviews of learning resources. At this time I am too green with Haskell to personally provide specific recommendations personally, so here is a list of links to words from more experienced haskellers.
+Here is a list of detailed reviews of learning resources. 
+
+At this time I am too green with Haskell to personally provide specific recommendations personally, so here is a list of links to words from more experienced haskellers.
 
 
 ## Reviews

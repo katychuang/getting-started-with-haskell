@@ -39,7 +39,7 @@ This is an unsorted and unrated list of resources; peruse these resources at you
 * [Haskell Programming Tips](http://www.haskell.org/haskellwiki/Haskell_programming_tips)
 * [Twitter-Haskell Tips](https://twitter.com/HaskellTips)
 
-# Misc, but useful
+## Misc
 
 * [Scalable Program Architectures](https://news.ycombinator.com/item?id=7586812)
 * [iHaskell](http://gibiansky.github.io/IHaskell/)

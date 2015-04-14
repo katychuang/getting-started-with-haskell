@@ -6,7 +6,7 @@ There are many resources for learning haskell on the web, but few of them focus 
 There are several sections in this repository: 
 
 - [Tutorials](https://github.com/katychuang/getting-started-with-haskell/tree/master/tutorials) - A directory of cookbook-like tutorials, targeted for those with an active, hands-on learning style.
-- [Resources](https://github.com/katychuang/getting-started-with-haskell/tree/master/resources) - A long, unsorted, loosely grouped list of resources, targeted for individuals with a more passive, by the book learning approach.
+- [Resources](https://github.com/katychuang/getting-started-with-haskell/tree/master/resources) - An unsorted, loosely grouped list of resources, targeted for individuals with a more passive, by the book learning approach.
 
 *Disclaimer:* I am still fairly new to the Haskell language, so any advice or questions are welcomed as this repository grows. Feel free to send an issue ticket or DM on twitter [@katychuang](http://twitter.com/katychuang), or find me on IRC @katychuang.
 
