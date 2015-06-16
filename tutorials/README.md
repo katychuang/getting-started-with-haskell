@@ -10,6 +10,7 @@
 | List trending venues (Foursquare API) | foursquaretrends.hs   | [Tutorial][3], [Code][4] |
 | Hakyll set up                         | -                     | [Tutorial][5]            |
 | Snap framework w/ PostgreSQL Setup    | -                     | [Tutorial][6]            |
+| A REST API with Haskell and Snap      | -                     | [Tutorial][7]            |
 
 
 [1]: http://blog.raynes.me/blog/2012/11/27/easy-json-parsing-in-haskell-with-aeson/
@@ -18,6 +19,7 @@
 [4]: https://github.com/wcauchois/haskell-foursquare-api-example
 [5]: http://yannesposito.com/Scratch/en/blog/Hakyll-setup/
 [6]: http://janrain.com/blog/tutorial-building-a-sample-application-with-haskell-snap-postgresql-and-the-postgresql-simple-snaplet/
+[7]: http://robots-staging.thoughtbot.com/a-rest-api-with-haskell-and-snap
 
 ---
 
