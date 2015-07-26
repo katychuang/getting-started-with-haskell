@@ -168,11 +168,16 @@ main =
 
 ------------------------------------------------------------------------
 
--- REFERENCE & LINKS --
+{-
 
--- This file comes from a tutorial published in Aug 2013.
--- The original version is published at: https://www.fpcomplete.com/school/to-infinity-and-beyond/pick-of-the-week/foursquare-api-example
+# REFERENCE & LINKS
 
--- In order to use this code, you'll need to install http-conduit and aeson.
--- They can be installed with the following command:
--- cabal install http-conduit aeson
+This file comes from a tutorial published in Aug 2013.
+The original version is published at: https://www.fpcomplete.com/school/to-infinity-and-beyond/pick-of-the-week/foursquare-api-example
+
+In order to use this code, you'll need to install http-conduit and aeson.
+They can be installed through cabal with the following command:
+
+`prompt$ cabal install http-conduit aeson`
+
+-}

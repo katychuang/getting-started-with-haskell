@@ -65,10 +65,22 @@ main = do
 
 ------------------------------------------------------------------------
 
--- REFERENCE & LINKS --
--- https://www.fpcomplete.com/school/starting-with-haskell/libraries-and-frameworks/text-manipulation/json
+{-
+# REFERENCE & LINKS
 
--- first, run this `cabal install authenticate-oauth`
--- load into ghci with :l twitter-fpcomplete.hs
--- run Main
+Originally published at:
+https://www.fpcomplete.com/school/starting-with-haskell/libraries-and-frameworks/text-manipulation/json
 
+# Usage
+
+1. Run this `cabal install authenticate-oauth`
+
+2. load this file into ghci with `:l twitter-fpcomplete.hs`
+    ghci to open ghci (or you can use cabal repl)
+    :l or :load to load a haskell file
+
+3. run Main:
+   In your ghci console, it'll show `Prelude>`
+   From there, type in `main`
+
+-}

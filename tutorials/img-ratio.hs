@@ -55,26 +55,34 @@ tenths' (x, y) = reverse $ [(x * factor / 10, y * factor / 10) | factor <- [1..9
 
 
 ------------------------------------------------------------------------
--- How to run this script:
--- 1. Open up ghci in your console and load this file `:l img-ratio.hs` or
---    `:load img-ratio.hs`. :l is short for :load.
--- 2. Call one of the defined functions, i.e. `shrinkWidth 1024` will return
---    the value of 1024 divided by 2; the output will be 512.0.
---    Note the data types in the function to understand correct input for
---    each method. For instance, shrinkWidth takes a Double type, so passing
---    in a string such as `blue` will produce an error "Not in scope: `blue'".
---    Similarly, for shrink' (pronounced shrink prime) it takes a list of
---    Doubles. Passing in a different type, such as a tuple
---      `shrink' (1024, 768)`,  will give you an error:
---    Couldn't match expected type `[Double]' with actual type `(t0, t1)'
-      --In the first argument of shrink', namely `(1024, 768)'
-      --In the expression: shrink' (1024, 768)
-      --In an equation for `it': it = shrink' (1024, 768)
---- Another example of wrong input - passing in a list of strings: `shrink' ["red", "white", "blue"]`
---        Couldn't match expected type `Double' with actual type `[Char]'
---        In the expression: "red"
---        In the first argument of shrink', namely `["red", "white", "blue"]'
---        In the expression: shrink' ["red", "white", "blue"]
+{-
+
+How to run this script:
+
+1. Open up ghci in your console and load this file `:l img-ratio.hs` or
+   `:load img-ratio.hs`. :l is short for :load.
+
+2. Call one of the defined functions, i.e. `shrinkWidth 1024` will return
+   the value of 1024 divided by 2; the output will be 512.0.
+
+   Note the data types in the function to understand correct input for
+   each method. For instance, shrinkWidth takes a Double type, so passing
+   in a string such as `blue` will produce an error "Not in scope: `blue'".
+   Similarly, for shrink' (pronounced shrink prime), this function takes a list of
+   Doubles. Passing in a different type, such as a tuple
+     `shrink' (1024, 768)`,  will give you an error:
+   Couldn't match expected type `[Double]' with actual type `(t0, t1)'
+      - In the first argument of shrink', namely `(1024, 768)'
+      - In the expression: shrink' (1024, 768)
+      - In an equation for `it': it = shrink' (1024, 768)
+
+    Another example of wrong input - passing in a list of strings:
+       > `shrink' ["red", "white", "blue"]`
+       Couldn't match expected type `Double' with actual type `[Char]'
+       In the expression: "red"
+       In the first argument of shrink', namely `["red", "white", "blue"]'
+       In the expression: shrink' ["red", "white", "blue"]
+-}
 
 
 
