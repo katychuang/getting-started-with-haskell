@@ -13,6 +13,12 @@
 | A REST API with Haskell and Snap       | -                     | [Tutorial][7]            |
 | Effectful Haskell: IO, Monads, Functors| -                     | [Tutorial][8]            |
 
+**Topic: General Functional Programming Concepts**
+
+|             Description                |          File         |           URLs           |
+| -------------------------------------  | --------------------- | ------------------------ |
+| Effectful Haskell: IO, Monads, Functors| -                     | [Tutorial][8]            |
+
 
 
 [1]: http://blog.raynes.me/blog/2012/11/27/easy-json-parsing-in-haskell-with-aeson/
