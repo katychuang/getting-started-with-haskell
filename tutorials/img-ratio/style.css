@@ -1,0 +1,65 @@
+ /*
+ Author: @katychuang
+ Description: Used with reflex_ui.hs; compiled with ghcjs. 
+ */
+
+ @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|Merriweather:400,400italic,700|Halant:300,400,500|Over+the+Rainbow);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /*background: #eef0f6; blue */
+  background-color: #F8F9FA;
+  color: #42444C;
+  font-family: Georgia, serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+  
+.top-line {
+    height: 8px;
+    background: #006652;
+}
+
+.header {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 2.5em;
+  text-align: center;
+  width: 960px;
+}
+
+.header h1{
+  color: #66abff; /*blue*/
+  color: #1A9485; /*emerald*/
+  font-size: 24px;
+  /*text-transform: uppercase;*/
+}
+
+.header h2, .subtitle {
+  color: #66abff;
+  /*font-family: 'Oyster-A', Myriad Pro, Helvetica, sans-serif;*/
+  font-size: 14px;
+  white-space: nowrap;
+  font-style: italic;
+  letter-spacing: 0.3em;
+}
+
+.main {
+  background-color: #FFFFFF;
+  margin-top: 50px;
+  width:960px;
+  margin:0 auto;
+  color:#606060;
+  margin: 0 auto;
+  padding: 1.875em 3.75em;
+}
+
+.main label{
+  width: 70px;
+  border-bottom: 1px dotted #FEFEFE;
+}
