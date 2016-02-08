@@ -1,8 +1,7 @@
- /*
+  /*
  Author: @katychuang
- Description: Used with reflex_ui.hs; compiled with ghcjs. 
+ Description: Used with reflex_ui.hs; compiled with ghcjs.
  */
-
  @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|Merriweather:400,400italic,700|Halant:300,400,500|Over+the+Rainbow);
 
 * {
@@ -10,8 +9,8 @@
 }
 
 body {
-  /*background: #eef0f6; blue */
-  background-color: #F8F9FA;
+  /*background-color: #F8F9FA;*/
+  background-color: #eef0f6; 
   color: #42444C;
   font-family: Georgia, serif;
   font-size: 20px;
@@ -20,8 +19,8 @@ body {
 }
   
 .top-line {
-    height: 8px;
-    background: #006652;
+  height: 8px;
+  background: #005266;
 }
 
 .header {
@@ -34,8 +33,8 @@ body {
 }
 
 .header h1{
-  color: #66abff; /*blue*/
   color: #1A9485; /*emerald*/
+  color: #66abff; /*blue*/
   font-size: 24px;
   /*text-transform: uppercase;*/
 }
@@ -44,22 +43,66 @@ body {
   color: #66abff;
   /*font-family: 'Oyster-A', Myriad Pro, Helvetica, sans-serif;*/
   font-size: 14px;
-  white-space: nowrap;
   font-style: italic;
   letter-spacing: 0.3em;
+  white-space: nowrap;
 }
 
 .main {
   background-color: #FFFFFF;
-  margin-top: 50px;
-  width:960px;
-  margin:0 auto;
+  border: 1px solid #eee;
   color:#606060;
+  margin-top: 50px;
   margin: 0 auto;
+  margin:0 auto;
+  min-height: 400px;
   padding: 1.875em 3.75em;
+  width:960px;
+}
+
+.main .left, .main .right {
+  float: left;
+  width: 50%;
+}
+.main .box {
+  height: 30px;
+}
+
+.main .box:before,
+.main .box:after {
+  clear:both;
 }
 
 .main label{
-  width: 70px;
   border-bottom: 1px dotted #FEFEFE;
+  float: left;
+  min-width: 120px;
+  position: relative;
+  width: 120px;
+}
+
+.main input[type=number]{
+  float: left;
+  font-size: 16px;
+  height: 26px;
+  position: relative;
+}
+
+.links-item a {
+    color: #92949c;
+    font-family: "Oyster-ED","Oyster-E",minion-pro,serif;
+    font-size: .66667em;
+    font-weight: 200;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    line-height: 1.125em;
+    padding: .75em 0;
+    white-space: nowrap;
+}
+
+
+.photo-wrapper, figure.photoset {
+    background-color: white;
+    padding: 1.3em 1.3em 0.65em;
 }

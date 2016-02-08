@@ -1,7 +1,6 @@
 -- Author: @katychuang
 -- This is an example of using RefexFRP to make a calculator UI.
 
-
 {-# LANGUAGE RecursiveDo, TemplateHaskell #-}
 import Reflex
 import Reflex.Dom
@@ -9,6 +8,8 @@ import qualified Data.Map as Map
 import Safe (readMay)
 import Control.Applicative ((<*>), (<$>))
 import Data.FileEmbed
+
+import           Data.Monoid
 
 {-
 
@@ -35,27 +36,38 @@ main = mainWidgetWithCss $(embedFile "style.css")  $ do
 
   elClass "div" "main" $ do
 
-  x1 <- elClass "div" "box width" $ do
-    el "label" $ text "width "
-    x <- numberInput "1024"
-    return x
+    elClass "div" "left" $ do
 
-  y1 <- elClass "div" "box height" $ do
-    el "label" $ text "height "
-    y <- numberInput "768"
-    return y
+      x1 <- elClass "div" "box width" $ do
+        el "label" $ text "width "
+        x <- numberInput "1024"
+        return x
 
-  x2 <- elClass "div" "box width" $ do
-    el "label" $ text "new width "
-    x <- numberInput "640"
-    return x
+      y1 <- elClass "div" "box height" $ do
+        el "label" $ text "height "
+        y <- numberInput "768"
+        return y
 
-  step1 <- combineDyn (\x y -> (*) <$> x <*> y) x2 y1
-  step2 <- combineDyn (\x y -> (/) <$> x <*> y) step1 x1
+      x2 <- elClass "div" "box width" $ do
+        el "label" $ text "new width "
+        x <- numberInput "640"
+        return x
 
-  resultString <- mapDyn show step2
-  text "new height = "
-  dynText resultString
+      step1 <- combineDyn (\x y -> (*) <$> x <*> y) x2 y1
+      step2 <- combineDyn (\x y -> (/) <$> x <*> y) step1 x1
+
+      resultString <- mapDyn show step2
+      text "new height = "
+      dynText resultString
+      
+    elClass "div" "right" $ do
+      
+      elAttr' "div" ("style" =: "width:400px; height:300px; border: 1px solid red; position: fixed;") $ return ()
+      
+      elAttr' "img" ("src" =: "http://placehold.it/640x480" <> "width" =: "400") $ return ()
+
+
+  return ()
 
 numberInput :: (MonadWidget t m) => String -> m (Dynamic t (Maybe Double))
 numberInput i = do
