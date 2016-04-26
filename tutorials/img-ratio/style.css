@@ -54,16 +54,27 @@ body {
   color:#606060;
   margin-top: 50px;
   margin: 0 auto;
-  margin:0 auto;
   min-height: 400px;
   padding: 1.875em 3.75em;
   width:960px;
+  height: auto;
 }
 
-.main .left, .main .right {
+.main .left{
   float: left;
-  width: 50%;
+  width: 40%;
 }
+
+.main .right {
+  float: left;
+  width: 60%;
+  padding-left: 20px;
+}
+
+hr {
+  border: 1px solid #eee;
+}
+
 .main .box {
   height: 30px;
 }
@@ -78,7 +89,7 @@ body {
   float: left;
   min-width: 120px;
   position: relative;
-  width: 120px;
+  width: 80px;
 }
 
 .main input[type=number]{
