@@ -1352,6 +1352,7 @@ function h$ghcjszmprimZCGHCJSziPrimziJSVal_con_e() { return h$stack[h$sp]; };
 */
 
 var h$isNode = false; // runtime is node.js
+var h$isJvm = false; // runtime is JVM
 var h$isJsShell = false; // runtime is SpiderMonkey jsshell
 var h$isJsCore = false; // runtime is JavaScriptCore jsc
 var h$isBrowser = false; // running in browser or everything else
@@ -1372,6 +1373,13 @@ if(typeof process !== 'undefined' && (typeof h$TH !== 'undefined' || (typeof req
     var h$child = child_process;
     var h$process = process;
     var h$processConstants = process['binding']('constants');
+} else if(typeof Java !== 'undefined') {
+    h$isJvm = true;
+    this.console = {
+      log: function(s) {
+        java.lang.System.out.print(s);
+      }
+    };
 } else if(typeof snarf !== 'undefined' && typeof evalInFrame !== 'undefined' && typeof countHeap !== 'undefined') {
     h$isJsShell = true;
     this.console = { log: this.print };
@@ -3922,7 +3930,7 @@ var h$nbi = BigInteger.nbi;
 
     attachTo.setImmediate = setImmediate;
     attachTo.clearImmediate = clearImmediate;
-}(this));
+}(h$getGlobal(this)));
 // Copyright 2009 The Closure Library Authors. All Rights Reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -10175,20 +10183,33 @@ h$getGlbl();
 
 
 function h$log() {
-  if(h$glbl) {
-    if(h$glbl.console && h$glbl.console.log) {
-      h$glbl.console.log.apply(h$glbl.console,arguments);
+
+
+
+
+
+
+
+  try {
+
+    if(h$glbl) {
+      if(h$glbl.console && h$glbl.console.log) {
+        h$glbl.console.log.apply(h$glbl.console,arguments);
+      } else {
+        h$glbl.print.apply(this,arguments);
+      }
     } else {
-      h$glbl.print.apply(this,arguments);
-    }
-  } else {
-    if(typeof console !== 'undefined') {
+      if(typeof console !== 'undefined') {
 
-      console.log.apply(console, arguments);
+        console.log.apply(console, arguments);
 
-    } else if(typeof print !== 'undefined') {
-      print.apply(null, arguments);
+      } else if(typeof print !== 'undefined') {
+        print.apply(null, arguments);
+      }
     }
+
+  } catch(ex) {
+    // ignore console.log exceptions (for example for IE9 when console is closed)
   }
 }
 
@@ -10208,6 +10229,9 @@ var h$programArgs;
 
 if(h$isNode) {
     h$programArgs = process.argv.slice(1);
+} else if(h$isJvm) {
+    h$programArgs = h$getGlobal(this).arguments.slice(0);
+    h$programArgs.unshift("a.js");
 } else if(h$isJsShell && typeof h$getGlobal(this).scriptArgs !== 'undefined') {
     h$programArgs = h$getGlobal(this).scriptArgs.slice(0);
     h$programArgs.unshift("a.js");
@@ -11753,6 +11777,8 @@ function h$exitProcess(code) {
 
     if(h$isNode) {
  process.exit(code);
+    } else if(h$isJvm) {
+        java.lang.System.exit(code);
     } else if(h$isJsShell) {
         quit(code);
     } else if(h$isJsCore) {
@@ -21680,7 +21706,7 @@ function h$ap_gen()
           var h$RTS_531 = h$paps[h$RTS_525];
           var h$RTS_532 = [h$r1, (((((h$RTS_521.a >> 8) - h$RTS_525) * 256) + h$RTS_523) - h$RTS_524)];
           for(var h$RTS_533 = 0;(h$RTS_533 < h$RTS_525);(h$RTS_533++)) {
-            h$RTS_532.push(h$stack[((h$sp - h$RTS_533) - 1)]);
+            h$RTS_532.push(h$stack[((h$sp - h$RTS_533) - 2)]);
           };
           h$sp = ((h$sp - h$RTS_525) - 2);
           h$r1 = h$init_closure({ d1: null, d2: null, f: h$RTS_531, m: 0
@@ -21728,7 +21754,7 @@ function h$ap_gen()
           var h$RTS_543 = h$paps[h$RTS_537];
           var h$RTS_544 = [h$r1, (((((h$r1.d2.d1 >> 8) - h$RTS_537) * 256) + h$RTS_535) - h$RTS_536)];
           for(var h$RTS_545 = 0;(h$RTS_545 < h$RTS_537);(h$RTS_545++)) {
-            h$RTS_544.push(h$stack[((h$sp - h$RTS_545) - 1)]);
+            h$RTS_544.push(h$stack[((h$sp - h$RTS_545) - 2)]);
           };
           h$sp = ((h$sp - h$RTS_537) - 2);
           h$r1 = h$init_closure({ d1: null, d2: null, f: h$RTS_543, m: 0
