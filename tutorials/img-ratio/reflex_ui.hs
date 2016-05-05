@@ -10,6 +10,7 @@ import Control.Applicative ((<*>), (<$>))
 import Data.FileEmbed
 
 import           Data.Monoid
+import           Data.Map (Map)
 
 {-
 
@@ -36,22 +37,17 @@ main = mainWidgetWithCss $(embedFile "style.css")  $ do
 
   elClass "div" "main" $ do
 
-    elClass "div" "left" $ do
+    attrs <- elClass "div" "left" $ do
+      x1 <- box "x1  =" "1024" never
+      el "hr" $ return ()
+      y1 <- box "y1  =" "768" never
 
-      x1 <- elClass "div" "box width" $ do
-        el "label" $ text "width "
-        x <- numberInput "1024"
-        return x
+      el "br" $ return ()
+      el "br" $ return ()
 
-      y1 <- elClass "div" "box height" $ do
-        el "label" $ text "height "
-        y <- numberInput "768"
-        return y
-
-      x2 <- elClass "div" "box width" $ do
-        el "label" $ text "new width "
-        x <- numberInput "640"
-        return x
+      x2 <- box "x2  =" "640" never
+      el "hr" $ return ()
+      y2 <- box "y2  =" "480" never
 
       step1 <- combineDyn (\x y -> (*) <$> x <*> y) x2 y1
       step2 <- combineDyn (\x y -> (/) <$> x <*> y) step1 x1
@@ -59,23 +55,37 @@ main = mainWidgetWithCss $(embedFile "style.css")  $ do
       resultString <- mapDyn show step2
       text "new height = "
       dynText resultString
+      combineDyn (\x y -> imgAttrs x y) x1 y1
       
     elClass "div" "right" $ do
       
-      elAttr' "div" ("style" =: "width:400px; height:300px; border: 1px solid red; position: fixed;") $ return ()
+      elDynAttr' "img" (attrs) $ return ()
       
-      elAttr' "img" ("src" =: "http://placehold.it/640x480" <> "width" =: "400") $ return ()
-
 
   return ()
 
-numberInput :: (MonadWidget t m) => String -> m (Dynamic t (Maybe Double))
-numberInput i = do
+
+textInputAttrs :: Maybe Double -> Maybe Double -> Maybe Double -> Double
+textInputAttrs x y x2 = case (x, y, x2) of 
+  (Just x', Just y', Just x'') -> (x' * y' / x'')
+  _ -> 0.0
+
+imgAttrs :: Maybe Double -> Maybe Double -> Map String String
+imgAttrs x y = case (x, y) of
+  (Just x', Just y') -> "src" =: ("http://placehold.it/" ++ (show x') ++"x"++ (show y')) <> style <> static
+  _ -> Map.empty
+  where
+    static = "width" =: "400"
+    style = "style" =: "border: 1px solid red; position: fixed;"
+
+numberInput :: (MonadWidget t m) => String -> Event t Double -> m (Dynamic t (Maybe Double))
+numberInput i e = do
   let errorState = Map.singleton "style" "border-color: red"
       validState = Map.singleton "style" "border-color: green"
   rec n <- textInput $ def & textInputConfig_inputType .~ "number"
                        & textInputConfig_initialValue .~ i
                        & textInputConfig_attributes .~ attrs
+                       & setValue .~  fmap show e
       result <- mapDyn readMay $ _textInput_value n
       attrs <- mapDyn (\r -> case r of
                                   Just _ -> validState
@@ -83,3 +93,9 @@ numberInput i = do
   return result
 
 
+box :: (MonadWidget t m) => String -> String -> Event t Double -> m (Dynamic t (Maybe Double))
+box t i e = 
+  elClass "div" "box height" $ do
+    el "label" $ text t
+    y <- numberInput i e
+    return y
