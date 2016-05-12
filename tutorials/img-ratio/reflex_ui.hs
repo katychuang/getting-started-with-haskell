@@ -72,6 +72,10 @@ main = mainWidgetWithCss $(embedFile "style.css")  $ do
       dynText test
 
 
+  divClass "footer" $ do
+    text "(C) 2016 Demo of a ReflexFRP app. Designed by "
+    elAttr' "a" ("href" =: "http://github.com/katychuang") $
+      text "Kat Chuang"
   return ()
 
 

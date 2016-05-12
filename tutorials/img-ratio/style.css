@@ -99,6 +99,9 @@ hr {
   font-size: 16px;
   height: 26px;
   position: relative;
+  border-width: 1px;
+  border-radius: 2px;
+  padding: 5px;
 }
 
 .links-item a {
@@ -118,4 +121,12 @@ hr {
 .photo-wrapper, figure.photoset {
     background-color: white;
     padding: 1.3em 1.3em 0.65em;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    color: #687984;
+    font-size: 10pt;
+    padding: 10px;
 }
