@@ -33,33 +33,43 @@ main = mainWidgetWithCss $(embedFile "style.css")  $ do
   elClass "div" "top-line" $ return ()
 
   elClass "div" "header" $ do
-    elClass "h1" "logo" $ text "Image Ratio"
+    elClass "h1" "logo" $ text "Image Aspect Ratio"
 
   elClass "div" "main" $ do
 
-    attrs <- elClass "div" "left" $ do
-      x1 <- box "x1  =" "1024" never
-      el "hr" $ return ()
-      y1 <- box "y1  =" "768" never
+    uh <- elClass "div" "left" $ do
+      rec
+        attrs <- combineDyn (\x y -> imgAttrs x y) x1 y1
+        elDynAttr' "img" (attrs) $ return ()
+
+        x1 <- box "x1  =" "1024" never
+        el "hr" $ return ()
+        y1 <- box "y1  =" "768" never
 
       el "br" $ return ()
-      el "br" $ return ()
 
-      x2 <- box "x2  =" "640" never
-      el "hr" $ return ()
-      y2 <- box "y2  =" "480" never
+      text "ratio = "
+      uh <- combineDyn (\x y -> calcAspectRatio x y) x1 y1
+      test <- mapDyn show uh
+      dynText test
 
-      step1 <- combineDyn (\x y -> (*) <$> x <*> y) x2 y1
-      step2 <- combineDyn (\x y -> (/) <$> x <*> y) step1 x1
 
-      resultString <- mapDyn show step2
-      text "new height = "
-      dynText resultString
-      combineDyn (\x y -> imgAttrs x y) x1 y1
+
+
 
     elClass "div" "right" $ do
+      rec
+        attrs <- combineDyn (\x y -> imgAttrs x y) x2 y2
+        elDynAttr' "img" (attrs) $ return ()
 
-      elDynAttr' "img" (attrs) $ return ()
+        x2 <- box "x2  =" "640" never
+        el "hr" $ return ()
+        y2 <- box "y2  =" "480" never
+
+      text "ratio = "
+      uh <- combineDyn (\x y -> calcAspectRatio x y) x2 y2
+      test <- mapDyn show uh
+      dynText test
 
 
   return ()
@@ -76,7 +86,7 @@ imgAttrs x y = case (x, y) of
   _ -> Map.empty
   where
     static = "width" =: "400"
-    style = "style" =: "border: 1px solid red; position: fixed;"
+    style = "style" =: "border: 1px solid red; margin-bottom: 25px;"
 
 numberInput :: (MonadWidget t m) => String -> Event t Double -> m (Dynamic t (Maybe Double))
 numberInput i e = do
