@@ -56,11 +56,11 @@ main = mainWidgetWithCss $(embedFile "style.css")  $ do
       text "new height = "
       dynText resultString
       combineDyn (\x y -> imgAttrs x y) x1 y1
-      
+
     elClass "div" "right" $ do
-      
+
       elDynAttr' "img" (attrs) $ return ()
-      
+
 
   return ()
 
@@ -94,7 +94,7 @@ numberInput i e = do
 
 
 box :: (MonadWidget t m) => String -> String -> Event t Double -> m (Dynamic t (Maybe Double))
-box t i e = 
+box t i e =
   elClass "div" "box height" $ do
     el "label" $ text t
     y <- numberInput i e
