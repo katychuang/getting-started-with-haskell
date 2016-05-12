@@ -78,6 +78,10 @@ main = mainWidgetWithCss $(embedFile "style.css")  $ do
       text "Kat Chuang"
   return ()
 
+calcAspectRatio :: Maybe Double -> Maybe Double -> Double
+calcAspectRatio x y = case (x, y) of
+  (Just x', Just y') -> x' / y'
+  _ -> 4.3
 
 textInputAttrs :: Maybe Double -> Maybe Double -> Maybe Double -> Double
 textInputAttrs x y x2 = case (x, y, x2) of 
