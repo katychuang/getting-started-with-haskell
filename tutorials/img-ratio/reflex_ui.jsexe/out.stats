@@ -1,10 +1,10 @@
 code size summary per package:
 
-base:                    559498
+base:                    553959
 bytes_7xzRCqmYKEUD9kT8JNNjd6:1869
 conta_5w3UY4chXx62LVUOUrXeRm:121498
 depen_5vw10fkSDDD0LdF4Qk8khv:2833
-depen_HCFzp6ZGqMz1lvJkHhl9BD:47653
+depen_HCFzp6ZGqMz1lvJkHhl9BD:47675
 excep_GsT9breZyJSLZ8kkCjLGTR:4696
 ghc-prim:                29968
 ghcjs_B7KLFJ07Vte3zPHAgRIBTb:11013
@@ -12,9 +12,9 @@ ghcjs_D7BYGeMTlMGF2My8KZzKUS:143716
 ghcjs_Kc7TQ2cEDg1F5e5cgY2Vuk:9821
 integer-gmp:             31385
 lens_8q4j85Kn2si1vya922P0ln:458
-main:                    33657
+main:                    38066
 refle_BP42iAL8rA7IBOuWCaV0zs:400479
-refle_IbNW0IEhD2N2cZrEG6FTBQ:419231
+refle_IbNW0IEhD2N2cZrEG6FTBQ:420568
 reftf_JOU40Nd0lxyACBtr3v80Qj:1202
 safe_BjI3SxrMPD5F5AZ3gJB9mt:5125
 text_1ffW5NTi2SPHBcBuYSkgjk:29874
@@ -30,7 +30,6 @@ base
     Control.Monad.Fix:                  584
     Data.Either:                        397
     Data.Function:                      86
-    Data.Functor:                       108
     Data.Functor.Identity:              224
     Data.Maybe:                         1186
     Data.Monoid:                        108
@@ -42,7 +41,7 @@ base
     Foreign.Marshal.Array:              2038
     Foreign.Storable:                   2680
     GHC.Arr:                            3667
-    GHC.Base:                           11192
+    GHC.Base:                           9126
     GHC.Char:                           718
     GHC.Conc.Sync:                      7822
     GHC.Enum:                           18881
@@ -69,13 +68,13 @@ base
     GHC.Int:                            802
     GHC.List:                           9665
     GHC.MVar:                           188
-    GHC.Num:                            2736
+    GHC.Num:                            2557
     GHC.Ptr:                            188
     GHC.Read:                           17256
     GHC.Real:                           19022
     GHC.ST:                             186
     GHC.STRef:                          648
-    GHC.Show:                           11811
+    GHC.Show:                           8625
     GHC.Storable:                       1084
     GHC.TopHandler:                     10349
     GHC.Weak:                           188
@@ -100,7 +99,7 @@ depen_5vw10fkSDDD0LdF4Qk8khv
     Data.GADT.Compare:                  2184
 
 depen_HCFzp6ZGqMz1lvJkHhl9BD
-    Data.Dependent.Map:                 14197
+    Data.Dependent.Map:                 14219
     Data.Dependent.Map.Internal:        33456
 
 excep_GsT9breZyJSLZ8kkCjLGTR
@@ -141,7 +140,7 @@ lens_8q4j85Kn2si1vya922P0ln
     Control.Lens.Setter:                458
 
 main
-    Main:                               33657
+    Main:                               38066
 
 refle_BP42iAL8rA7IBOuWCaV0zs
     Data.Functor.Misc:                  3225
@@ -153,7 +152,7 @@ refle_BP42iAL8rA7IBOuWCaV0zs
 refle_IbNW0IEhD2N2cZrEG6FTBQ
     Reflex.Dom.Class:                   6438
     Reflex.Dom.Internal:                137604
-    Reflex.Dom.Widget.Basic:            246416
+    Reflex.Dom.Widget.Basic:            247753
     Reflex.Dom.Widget.Input:            28773
 
 reftf_JOU40Nd0lxyACBtr3v80Qj
@@ -181,5 +180,5 @@ trans_KzbnBSIEqPI2eU1Inn4mzm
 
 
 
-packed metadata: 375059
+packed metadata: 374093
 
