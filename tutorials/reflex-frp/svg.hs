@@ -20,8 +20,6 @@ myDiv = do
                ]
 
   s <- elSvg "svg" attrs (elSvg "circle" cAttrs (return()))
-  c <- elSvg "svg" attrs (
-    elSvg "circle" cAttrs (text "@katychuang.nyc"))
 
   return ()
 
