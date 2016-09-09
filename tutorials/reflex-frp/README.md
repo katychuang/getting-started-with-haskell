@@ -30,7 +30,7 @@ This example was from a live-coding workshop at the NY Haskell Users Group by Al
 
 ### 2. Type Ahead autocomplete
 
-Code is available from [@ali-abrar][https://gist.github.com/ali-abrar/2a52593f3a391d82c40f439d4894f017]
+Code is available from [@ali-abrar](https://gist.github.com/ali-abrar/2a52593f3a391d82c40f439d4894f017)
 
 This example was from a live-coding workshop at the NY Haskell Users Group by Ali Abrar.
 
