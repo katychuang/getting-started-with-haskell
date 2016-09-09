@@ -1,0 +1,8 @@
+.box {
+    border: 1px dashed black;
+    height: 100px;
+    width: 100px;
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+}
