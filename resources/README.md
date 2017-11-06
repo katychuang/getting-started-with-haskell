@@ -23,6 +23,10 @@ This is an unsorted and unrated list of resources; peruse these resources at you
 * http://www.umiacs.umd.edu/~hal/docs/daume02yaht.pdf
 * [Roll your own IRC Bot](http://www.haskell.org/haskellwiki/Roll_your_own_IRC_bot)
 * [Category Theory for Programmers](http://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/)
+* [Monads in 15 minutes](http://www.randomhacks.net/2007/03/12/monads-in-15-minutes/)
+* [Functional Programming in Haskell](https://github.com/caiorss/Functional-Programming/blob/master/haskell/README.org)
+* [Functors, Applicatives, And Monads In Pictures](http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html#functors)
+* [Hitchhikers guide to Haskell](https://wiki.haskell.org/Hitchhikers_guide_to_Haskell)
 
 **Note:** there is a more detailed list of tried tutorials in the in the [*tutorials* directory](https://github.com/katychuang/getting-started-with-haskell/tree/master/tutorials)
 
