@@ -1,1 +1,5 @@
 .DS_Store
+*.js_dyn_hi
+*.js_dyn_o
+*.js_hi
+*.js_o
