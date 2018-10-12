@@ -37,6 +37,7 @@ This is an unsorted and unrated list of resources; peruse these resources at you
 * [Haskell Data Analysis Cookbook](http://haskelldata.com)
 * [Real World Haskell](http://book.realworldhaskell.org)
 * [Real World Haskell Book Club](https://groups.google.com/forum/#!forum/real-world-haskell-book-club)
+* [Learn You a Haskell for Great Good!](http://learnyouahaskell.com/)
  
 ## Tips
 
