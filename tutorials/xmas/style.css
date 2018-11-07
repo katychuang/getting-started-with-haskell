@@ -1,0 +1,12 @@
+* {
+  font-family: arial;
+  color: #222;
+}
+
+h1, h2, p {
+  font-size: 12pt;
+}
+
+h1 {
+  visibility: hidden;
+}
