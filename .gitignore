@@ -6,3 +6,5 @@
 *.js_o
 *.jsexe/
 !tutorials/reflex-frp/xmas/*.jsexe/
+!tutorials/reflex-frp/xmas/*.jsexe/*.png
+!tutorials/reflex-frp/xmas/*.jsexe/*.html
