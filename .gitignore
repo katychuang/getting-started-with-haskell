@@ -5,4 +5,4 @@
 *.js_hi
 *.js_o
 *.jsexe/
-!tutorials/xmas/*.jsexe/
+!tutorials/reflex-frp/xmas/*.jsexe/
